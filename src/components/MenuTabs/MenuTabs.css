@@ -69,3 +69,10 @@
 .menu-tab--content p {
     font-family: var(--font-secondary);
 }
+
+@media only screen and (min-width: 1024px) {
+    .menu-tab--categories {
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+}

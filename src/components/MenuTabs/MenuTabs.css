@@ -1,0 +1,71 @@
+.menu-tab {
+    max-width: 100%;
+}
+
+.menu-tab--icon {
+    filter: invert(17%) sepia(11%) saturate(4282%) hue-rotate(102deg) brightness(103%) contrast(87%);
+}
+
+.menu-tab--trigger {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    min-width: 100px;
+    max-height: 100px;
+}
+
+.menu-tab--trigger.mini-lanches {
+    margin-left: 1rem;
+}
+
+.menu-tab--trigger.bolo-cha {
+    margin-left: -.65rem;
+}
+
+.menu-tab--trigger[data-state="active"] {
+    border-bottom: 8px solid var(--clr-secondary);
+}
+
+.menu-tab--trigger img {
+    max-width: 50px;
+}
+
+.menu-tab--trigger[data-state="active"] > .menu-tab--icon {
+    filter: invert(76%) sepia(58%) saturate(664%) hue-rotate(332deg) brightness(104%) contrast(101%);
+}
+
+.menu-tab--trigger h3 {
+    color: var(--clr-primary);
+}
+
+.menu-tab--trigger[data-state="active"] > h3 {
+    color: var(--clr-secondary);
+    margin-bottom: .35rem;
+}
+
+.menu-tab--categories {
+    display: flex;
+    column-gap: .5rem;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+
+.menu-tab--content {
+    padding: 2rem 3rem;
+}
+
+.menu-tab--content h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.menu-tab--content p {
+    font-family: var(--font-secondary);
+}

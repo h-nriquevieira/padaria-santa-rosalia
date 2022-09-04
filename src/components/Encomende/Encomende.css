@@ -1,0 +1,70 @@
+.encomende {
+  background-color: var(--clr-primary);
+  color:var(--clr-light);
+  display: grid;
+  place-content: center;
+  padding: 5rem 1.25rem;
+}
+
+.encomende--title {
+  color:var(--clr-secondary);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 100%;
+  margin: 0;
+  max-width: 320px;
+  justify-self: center;
+}
+
+.encomende--subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.encomende--tab-list {
+  display: flex;
+}
+
+.encomende--trigger[data-state="active"] {
+  border-bottom: 4px solid var(--clr-secondary);
+}
+
+.encomende--tab-list button {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.encomende--trigger h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+.encomende--trigger[data-state="active"] h3 {
+  font-weight: 600;
+}
+
+.encomende--content {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .encomende {
+    padding: 5rem 0;
+  }
+  
+  .encomende--title {
+    font-size: 3.35rem;
+  }
+  
+  .encomende--subtitle {
+    font-size: 1.65rem;
+  }
+    
+}

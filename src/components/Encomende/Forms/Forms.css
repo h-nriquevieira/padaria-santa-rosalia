@@ -12,7 +12,7 @@ input[type=tel] {
   background-color: var(--clr-light);
   border-radius: 20px;
   height: 36px;
-  width: 95%;
+  width: 98%;
   margin-bottom: 1.15rem;
   padding-left: 1rem;
   display: grid;
@@ -59,7 +59,7 @@ input::placeholder {
   grid-area: five;
   display: flex;
   align-items: center;
-  max-width: 95%;
+  max-width: 98%;
 }
 
 .radio-and-label:nth-of-type(5) label {
@@ -78,7 +78,7 @@ input[type=radio] {
 .quantidade-pessoas {
   display: flex;
   font-weight: 600;
-  max-width: 95%;
+  max-width: 98%;
   margin-top: 1.5rem;
 }
 
@@ -86,7 +86,7 @@ textarea {
   border-radius: 20px;
   border: none;
   color: var(--clr-primary);
-  width: 95%;
+  width: 98%;
   resize: none;
   padding: .5rem;
 }
@@ -100,7 +100,7 @@ textarea::placeholder {
 .entregar {
   display: flex;
   justify-content: space-between;
-  max-width: 95%;
+  max-width: 98%;
   margin: 1rem 0 1.5rem;
   font-weight: 600;
 }
@@ -194,6 +194,7 @@ textarea::placeholder {
   font-weight: 700;
   font-size: 1rem;
   padding: .25rem;
+  margin-top: 2rem;
 }
 
 .form--btn img {

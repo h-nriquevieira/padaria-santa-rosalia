@@ -9,10 +9,11 @@ input[type=text],
 input[type=email],
 input[type=tel] {
   all: unset;
+  box-sizing: border-box;
   background-color: var(--clr-light);
   border-radius: 20px;
   height: 36px;
-  width: 98%;
+  width: 100%;
   margin-bottom: 1.15rem;
   padding-left: 1rem;
   display: grid;
@@ -59,7 +60,7 @@ input::placeholder {
   grid-area: five;
   display: flex;
   align-items: center;
-  max-width: 98%;
+  max-width: 100%;
 }
 
 .radio-and-label:nth-of-type(5) label {
@@ -78,7 +79,7 @@ input[type=radio] {
 .quantidade-pessoas {
   display: flex;
   font-weight: 600;
-  max-width: 98%;
+  max-width: 100%;
   margin-top: 1.5rem;
 }
 
@@ -86,7 +87,7 @@ textarea {
   border-radius: 20px;
   border: none;
   color: var(--clr-primary);
-  width: 98%;
+  width: 100%;
   resize: none;
   padding: .5rem;
 }
@@ -100,7 +101,7 @@ textarea::placeholder {
 .entregar {
   display: flex;
   justify-content: space-between;
-  max-width: 98%;
+  max-width: 100%;
   margin: 1rem 0 1.5rem;
   font-weight: 600;
 }
@@ -144,7 +145,7 @@ textarea::placeholder {
 
 #endereco {
   grid-area: end;
-  width: 98%;
+  width: 100%;
 }
 
 #numero {
@@ -157,7 +158,7 @@ textarea::placeholder {
 
 #bairro {
   grid-area: bai;
-  width: 98%;
+  width: 100%;
 }
 
 #cidade {
@@ -181,7 +182,7 @@ textarea::placeholder {
 }
 
 .form--btn {
-  width: 98%;
+  width: 100%;
   margin: 1rem auto;
   display: grid;
   grid-template-columns: 1fr auto;

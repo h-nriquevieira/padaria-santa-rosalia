@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Forms.css'
 import arrow from '../../../assets/form--btn-arrow.svg'
+import pin from '../../../assets/location--pin.svg'
 
 function Forms() {
+  const [entregar, setEntregar] = useState(true);
+
   return (
     <form className="fisica">
       <input type="text" id='nome' name="nome" placeholder='Nome Completo'/>
@@ -39,11 +42,11 @@ function Forms() {
       <textarea name="observacoes" id="observacoes" cols="30" rows="10" placeholder='Observações (opcional):'></textarea>
       <div className="entregar">
         <div className="radio-and-label">
-          <input type="radio" name="entregar-retirar" id="entregar" />
+          <input type="radio" name="entregar-retirar" id="entregar" onChange={() => setEntregar(true)} />
           <label htmlFor="entregar">Entregar meu pedido</label>
         </div>
         <div className="radio-and-label">
-          <input type="radio" name="entregar-retirar" id="retirar" />
+          <input type="radio" name="entregar-retirar" id="retirar" onChange={() => setEntregar(false)}/>
           <label htmlFor="retirar">Retirar meu pedido</label>
         </div>
       </div>
@@ -51,6 +54,8 @@ function Forms() {
         <p className="bold">Atenção:</p>
         <p>Caso o evento seja em menos de 48h. entre em contato diretamente pelo (15) 99128-0331, de segunda a sábado das 8h30 às 20h</p>
       </div>
+
+      {entregar ? 
       <div className="address">
         <input type="text" name="endereco" id="endereco" placeholder='Endereço' />
         <input type="text" name="numero" id="numero" placeholder='Nº' />
@@ -60,6 +65,23 @@ function Forms() {
         <input type="text" name='cep' id='cep' placeholder='CEP' />
         <p>Taxa de entrega a ser calculada</p>
       </div>
+      : 
+      <div className="location">
+        <input type="radio" name="unidade" id="unidade1" />
+        <label className='unidade-label' htmlFor="unidade1">
+          <img src={pin} alt="" />
+          <p className="unidade--nome">Loja 1: Rua Aparecida</p>
+          <p className="unidade--endereco">R. Aparecida, 322.</p>
+        </label>
+        <input type="radio" name="unidade" id="unidade2" />
+        <label className='unidade-label' htmlFor="unidade2">
+          <img src={pin} alt="" />
+          <p className="unidade--nome">Loja 2: Artur Bernardes</p>
+          <p className="unidade--endereco">Av. Dr. Artur Bernardes, 856.</p>
+        </label>
+
+      </div>
+      }
 
       <button className='form--btn'>
         <span>Enviar</span>

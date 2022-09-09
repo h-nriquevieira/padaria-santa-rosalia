@@ -1,6 +1,5 @@
-import React from 'react';
-
-// import { Container } from './styles';
+import React from 'react'
+import './Salgados.css'
 
 function Salgados() {
   return (

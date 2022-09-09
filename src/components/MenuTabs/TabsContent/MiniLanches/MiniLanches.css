@@ -1,0 +1,19 @@
+.mini-lanches-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 320px;
+}
+
+.mini-lanches-content > * {
+  width: 320px;
+}
+
+.mini-lanches-content h3 {
+  margin: 0;
+}
+
+.monte-seu-lanche--2 {
+  margin-top: -3rem;
+}

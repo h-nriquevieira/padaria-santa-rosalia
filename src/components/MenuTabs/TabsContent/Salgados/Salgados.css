@@ -1,0 +1,22 @@
+@media only screen and (min-width: 1024px) {
+  .salgados {
+    display: grid;
+    grid-template-areas: "diversos fritos"
+                        "diversos assados";
+                        max-width: 940px;
+    justify-content: space-between;
+  }
+
+  .salgados--diversos {
+    grid-area: diversos;
+    max-width: 450px;
+  }
+
+  .salgados--fritos {
+    grid-area: fritos;
+  }
+
+  .salgados--assados {
+    grid-area: assados;
+  }
+}

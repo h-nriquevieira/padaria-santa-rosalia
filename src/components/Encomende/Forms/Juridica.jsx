@@ -7,7 +7,7 @@ function Forms() {
     <div className="juridica">
       <p>Por favor, entre em contato através do nosso WhatsApp</p>
       <p>(15) 97403-3814</p>
-      <button>
+      <button className='form--btn'>
         <a href="">Enviar mensagem</a>
         <img src={arrow} alt="" />
       </button>

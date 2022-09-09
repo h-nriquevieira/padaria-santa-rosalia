@@ -74,5 +74,10 @@
     .menu-tab--categories {
         justify-content: space-between;
         margin-top: 2rem;
+        width: 940px;
+    }
+
+    .menu-tab--content {
+        padding: 2rem 0;
     }
 }

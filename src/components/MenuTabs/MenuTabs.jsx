@@ -8,7 +8,10 @@ import miniLanches from '../../assets/menu/mini-lanches.svg'
 import doces from '../../assets/menu/doces.svg'
 import boloCha from '../../assets/menu/bolo-cha.svg'
 import bebidas from '../../assets/menu/bebidas.svg'
-import Salgados from './TabsContent/Salgados'
+import Salgados from './TabsContent/Salgados/Salgados'
+import Quiche from './TabsContent/Quiche/Quiche'
+import Aperitivos from './TabsContent/Aperitivos/Aperitivos'
+import MiniLanches from './TabsContent/MiniLanches/MiniLanches'
 
 
 export default function MenuTabs() {
@@ -48,13 +51,13 @@ export default function MenuTabs() {
         <Salgados />
       </Tabs.Content>
       <Tabs.Content className='menu-tab--content' value='quiches'>
-        <p>quiches</p>
+        <Quiche />
       </Tabs.Content>
       <Tabs.Content className='menu-tab--content' value='aperitivos'>
-        <p>aperitivos</p>
+        <Aperitivos />
       </Tabs.Content>
       <Tabs.Content className='menu-tab--content' value='mini-lanches'>
-        <p>mini-lanches</p>
+        <MiniLanches />
       </Tabs.Content>
       <Tabs.Content className='menu-tab--content' value='doces'>
         <p>doces</p>

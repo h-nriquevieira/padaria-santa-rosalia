@@ -17,3 +17,44 @@
 .aperitivos--img {
   width: 100%;
 }
+
+@media only screen and (min-width: 1024px) {
+  .aperitivos {
+    max-width: 940px;
+    display: grid;
+    grid-template-areas: "img palitos"
+                         "img pates"
+                         "img frios"
+                         "img queijos"
+                         "img cesta";
+    justify-content: start;
+  }
+
+  .aperitivos > * {
+    width: 100%;
+  }
+
+  .aperitivos--img {
+    grid-area: img;
+  }
+
+  .palitos {
+    grid-area: palitos;
+  }
+
+  .pates {
+    grid-area: pates;
+  }
+
+  .tabua-de-frios {
+    grid-area: frios;
+  }
+
+  .tabua-de-queijos {
+    grid-area: queijos;
+  }
+
+  .cesta-paes {
+    grid-area: cesta;
+  }
+}

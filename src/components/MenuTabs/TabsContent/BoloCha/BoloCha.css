@@ -13,7 +13,7 @@
   .bolo-cha-content {
     display: flex;
     flex-direction: row;
-    width: 940px;
+    max-width: 940px;
     column-gap: 3rem;
     padding: 4rem 0 0 4rem;
   }

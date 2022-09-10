@@ -12,6 +12,7 @@ import Salgados from './TabsContent/Salgados/Salgados'
 import Quiche from './TabsContent/Quiche/Quiche'
 import Aperitivos from './TabsContent/Aperitivos/Aperitivos'
 import MiniLanches from './TabsContent/MiniLanches/MiniLanches'
+import Doces from './TabsContent/Doces/Doces'
 
 
 export default function MenuTabs() {
@@ -60,7 +61,7 @@ export default function MenuTabs() {
         <MiniLanches />
       </Tabs.Content>
       <Tabs.Content className='menu-tab--content' value='doces'>
-        <p>doces</p>
+        <Doces />
       </Tabs.Content>
       <Tabs.Content className='menu-tab--content' value='bolo-cha'>
         <p>bolo-cha</p>

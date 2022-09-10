@@ -1,0 +1,45 @@
+.doces-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+.doces-content picture {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .doces-content {
+    width: 940px;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: "img  img"
+                         "col1 col2";
+  }
+
+  .doces-content picture {
+    grid-area: img;
+  }
+
+  .doces-content img {
+    width: 940px;
+  }
+
+  .doces-content div {
+    max-width: 390px;
+  }
+
+  .doces-content div:last-of-type p:first-of-type {
+    margin-top: 0;
+  }
+
+  .doces-content div:first-of-type {
+    grid-area: col1;
+  }
+
+  .doces-content div:last-of-type {
+    grid-area: col2;
+    justify-self: end;
+  }
+}

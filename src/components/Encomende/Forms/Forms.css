@@ -44,6 +44,10 @@ input::placeholder {
   grid-area: title;
 }
 
+.radio-and-label input:checked + label {
+  color: var(--clr-secondary);
+}
+
 .radio-and-label:nth-of-type(1) {
   grid-area: one;
 }
@@ -270,4 +274,68 @@ input[name="unidade"]:checked + label img {
   margin: 0;
 
   font-weight: var(--font-bold);
+}
+
+@media only screen and (min-width: 1024px) {
+  input::placeholder,
+  textarea {
+    font-size: .9rem
+  }
+
+  form {
+    max-width: 680px;
+  }
+
+  .juridica {
+    width: 680px;
+  }
+
+  .juridica p {
+    font-size: 1.4rem;
+  }
+
+  .juridica button {
+    min-width: 280px;
+  }
+
+  .fisica--tipo-de-evento {
+    grid-template-areas: "title . . ."
+                         "one two three four"
+                         "five five five five";
+    row-gap: 1.25rem;
+  }
+
+  textarea {
+    margin-top: 1.25rem;
+  }
+
+  .entregar {
+    margin-top: 1.25rem;
+  }
+
+  .address {
+    grid-template-areas: "end end end end end num"
+                         "comp comp comp bai bai bai"
+                         "cid cid cid cep cep cep"
+                         "p p p p p p";
+  }
+
+  .form--btn {
+    max-width: 300px;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    font-family: var(--font-primary);
+    letter-spacing: 15%;
+    padding: .5rem
+  }
+
+  .form--btn span {
+    position: relative;
+    left: .5rem;
+  }
+
+  input[name="unidade"] + label {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }

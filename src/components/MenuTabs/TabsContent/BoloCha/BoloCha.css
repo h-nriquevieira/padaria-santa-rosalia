@@ -1,0 +1,20 @@
+.bolo-cha-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+.bolo-cha-content picture {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width:1024px) {
+  .bolo-cha-content {
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+    column-gap: 3rem;
+    padding: 4rem 0 0 4rem;
+  }
+}

@@ -14,6 +14,7 @@ import Aperitivos from './TabsContent/Aperitivos/Aperitivos'
 import MiniLanches from './TabsContent/MiniLanches/MiniLanches'
 import Doces from './TabsContent/Doces/Doces'
 import BoloCha from './TabsContent/BoloCha/BoloCha'
+import Bebidas from './TabsContent/Bebidas/Bebidas'
 
 
 export default function MenuTabs() {
@@ -68,7 +69,7 @@ export default function MenuTabs() {
         <BoloCha />
       </Tabs.Content>
       <Tabs.Content className='menu-tab--content' value='bebidas'>
-        <p>bebidas</p>
+        <Bebidas />
       </Tabs.Content>
     </Tabs.Root>
   )

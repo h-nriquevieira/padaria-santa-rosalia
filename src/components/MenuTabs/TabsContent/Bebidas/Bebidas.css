@@ -1,0 +1,25 @@
+.bebidas-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+.bebidas-content picture {
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width:1024px) {
+  .bebidas-content {
+    display: flex;
+    flex-direction: row;
+    width: 940px;
+    column-gap: 3rem;
+    padding: 4rem 0 0 4rem;
+  }
+
+  .bebidas-content div {
+    align-self: start;
+    padding-top: 3rem;
+  }
+}

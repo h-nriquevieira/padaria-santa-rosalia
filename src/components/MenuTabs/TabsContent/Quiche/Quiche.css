@@ -16,3 +16,33 @@
 .quiches--img {
   width: 100%;
 }
+
+@media only screen and (min-width: 1024px) {
+  .quiches {
+    max-width: 940px;
+    display: grid;
+    grid-template-areas: "img micro"
+                         "img ind"
+                         "img gran";
+  }
+
+  .quiches > * {
+    max-width: 100%;
+  }
+
+  .quiches--img {
+    grid-area: img;
+  }
+
+  .micro-quiches {
+    grid-area: micro;
+  }
+
+  .quiche-individual {
+    grid-area: ind;
+  }
+
+  .quiche-grande {
+    grid-area: gran;
+  }
+}

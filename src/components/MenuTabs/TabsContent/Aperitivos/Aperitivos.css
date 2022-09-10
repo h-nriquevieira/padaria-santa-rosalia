@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  max-width: 320px;
 }
 
 .aperitivos > * {

@@ -17,3 +17,46 @@
 .monte-seu-lanche--2 {
   margin-top: -3rem;
 }
+
+@media only screen and (min-width: 1024px) {
+  .mini-lanches-content {
+    max-width: 940px;
+    display: grid;
+    column-gap: 5rem;
+    grid-template-areas: "minihd monte-2"
+                         "monte monte-2"
+                         "monte escolha";
+                         align-items: stretch;
+  }
+
+  .mini-lanches-content > * {
+    width: 100%;
+  }
+
+  .mini-hot-dog {
+    grid-area: minihd;
+  }
+
+  .monte-seu-lanche {
+    grid-area: monte;
+  }
+
+  .monte-seu-lanche--2 {
+    grid-area: monte-2;
+  }
+
+  .monte-seu-lanche--pao {
+    grid-area: escolha;
+    position: relative;
+    top: -5rem;
+  }
+  
+  .monte-seu-lanche--2 {
+    position: relative;
+    top: 3rem;
+  }
+
+  .pao--grid {
+    display: flex;
+  }
+}

@@ -22,7 +22,13 @@ function Carousel() {
     slidesToScroll: 1,
     autoplay: true,
     autplaySpeed: 300,
-    fade: true
+    fade: true,
+    adaptiveHeight: true,
+    arrows: false,
+    draggable: false,
+    pauseOnHover: false,
+    swipe: false,
+    touchMove: false
   }
 
   const isBigScreen = useMediaQuery(

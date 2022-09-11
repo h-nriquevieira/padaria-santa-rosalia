@@ -7,7 +7,7 @@ import './Encomende.css'
 
 function Encomende() {
   return (
-    <div className="encomende">
+    <div className="encomende" id="encomende">
       <h2 className="encomende--title">Encomende seu coffee break</h2>
       <p className="encomende--subtitle">Preencha os campos abaixo:</p>
       <Tabs.Root defaultValue='fisica'>

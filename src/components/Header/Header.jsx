@@ -24,7 +24,7 @@ function Header() {
             <h2>Proporcione a <span className="bold">melhor experiência</span> para seus convidados</h2>
             <button className='header--btn'>
               <img src={arrow} alt="" />
-              <a href="">Encomende seu coffee break</a>
+              <a href="#encomende">Encomende seu coffee break</a>
             </button>
           </div>
         </div>

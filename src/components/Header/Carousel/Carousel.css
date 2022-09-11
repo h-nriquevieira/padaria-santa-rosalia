@@ -1,3 +1,7 @@
+.slider {
+  overflow-x: hidden;
+}
+
 .slider img {
   width: 100%;
 }

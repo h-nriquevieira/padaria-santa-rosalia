@@ -69,6 +69,46 @@ function Header() {
           <span>•</span>
           <span>Coffee Break</span>
           <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
+          <span>Coffee Break</span>
+          <span>•</span>
         </div>
       </header>
   );

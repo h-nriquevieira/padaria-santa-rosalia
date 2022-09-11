@@ -27,6 +27,7 @@ body {
 
   font-family: var(--font-primary);
   color: var(--clr-primary);
+  overflow-x: hidden;
 }
 
 img,

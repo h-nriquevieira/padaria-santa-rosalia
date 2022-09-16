@@ -12,7 +12,7 @@ function Forms({toggleModal, setMessageSent}) {
   }
 
   return (
-    <form onSubmit={e => handleSubmit(e)} className="fisica">
+    <form onSubmit={e => handleSubmit} className="fisica">
       <input required type="text" id='nome' name="nome" placeholder='Nome Completo'/>
       <input required type="email" name="email" id="email" placeholder='E-mail' />
       <input required type="tel" name="telefone" id="telefone" placeholder='Telefone' />

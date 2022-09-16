@@ -200,6 +200,7 @@ textarea::placeholder {
   font-size: 1rem;
   padding: .25rem;
   margin-top: 2rem;
+  cursor: pointer;
 }
 
 .form--btn img {
@@ -242,6 +243,7 @@ input[name="unidade"] + label {
   grid-template-columns: 25% 1fr;
   padding: 1.5rem 0;
   column-gap: .75rem;
+  cursor: pointer;
 }
 
 input[name="unidade"]:checked + label {

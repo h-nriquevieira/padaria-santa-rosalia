@@ -1,0 +1,45 @@
+.modal--overlay {
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #000000aa;
+  display: grid;
+  place-items: center;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 2rem 5rem;
+  border-radius: 10px;
+  font-family: var(--font-primary);
+
+}
+
+.modal h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.modal p {
+  font-size: 1.25rem;
+  margin: .25rem 0;
+}
+
+.modal--btn {
+  margin-top: 1.5rem;
+  min-width: 100px;
+
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  color: var(--clr-light);
+  background-color: var(--clr-primary);
+  border: none;
+  border-radius: 5px;
+  padding: .5rem .25rem;
+
+  cursor: pointer;
+}
+

@@ -3,50 +3,55 @@ import './Forms.css'
 import arrow from '../../../assets/form--btn-arrow.svg'
 import pin from '../../../assets/location--pin.svg'
 
-function Forms() {
+function Forms({toggleModal, setMessageSent}) {
   const [entregar, setEntregar] = useState(true);
 
+  function handleSubmit(e) {
+    e.preventDefault()
+    toggleModal(true);
+  }
+
   return (
-    <form className="fisica">
-      <input type="text" id='nome' name="nome" placeholder='Nome Completo'/>
-      <input type="email" name="email" id="email" placeholder='E-mail' />
-      <input type="tel" name="telefone" id="telefone" placeholder='Telefone' />
+    <form onSubmit={e => handleSubmit(e)} className="fisica">
+      <input required type="text" id='nome' name="nome" placeholder='Nome Completo'/>
+      <input required type="email" name="email" id="email" placeholder='E-mail' />
+      <input required type="tel" name="telefone" id="telefone" placeholder='Telefone' />
       <div className="fisica--tipo-de-evento">
         <p className='evento--title'>Tipo de evento:</p>
         <div className="radio-and-label">
-          <input type="radio" name="tipo-de-evento" id="aniversario" />
+          <input required type="radio" name="tipo-de-evento" id="aniversario" />
           <label htmlFor="aniversario">Aniversário</label>
         </div>
         <div className="radio-and-label">
-          <input type="radio" name="tipo-de-evento" id="casamento" />
+          <input required type="radio" name="tipo-de-evento" id="casamento" />
           <label htmlFor="casamento">Casamento</label>
         </div>
         <div className="radio-and-label">
-          <input type="radio" name="tipo-de-evento" id="coffee-break" />
+          <input required type="radio" name="tipo-de-evento" id="coffee-break" />
           <label htmlFor="coffee-break">Coffee Break</label>
         </div>
         <div className="radio-and-label">
-          <input type="radio" name="tipo-de-evento" id="coquetel" />
+          <input required type="radio" name="tipo-de-evento" id="coquetel" />
           <label htmlFor="coquetel">Coquetel</label>
         </div>
         <div className="radio-and-label">
-          <input type="radio" name="tipo-de-evento" id="outro" />
+          <input required type="radio" name="tipo-de-evento" id="outro" />
           <label htmlFor="outro">Outro:</label>
           <input type="text" name='evento-outro' id='evento-outro' />
         </div>
       </div>
       <div className="quantidade-pessoas">
         <label htmlFor="quantidade">Quantidade de pessoas no evento:</label>
-        <input type="text" name='quantidade' id='quantidade'/>
+        <input required type="text" name='quantidade' id='quantidade'/>
       </div>
       <textarea name="observacoes" id="observacoes" cols="30" rows="10" placeholder='Observações (opcional):'></textarea>
       <div className="entregar">
         <div className="radio-and-label">
-          <input type="radio" name="entregar-retirar" id="entregar" onChange={() => setEntregar(true)} />
+          <input required type="radio" name="entregar-retirar" id="entregar" onChange={() => setEntregar(true)} />
           <label htmlFor="entregar">Entregar meu pedido</label>
         </div>
         <div className="radio-and-label">
-          <input type="radio" name="entregar-retirar" id="retirar" onChange={() => setEntregar(false)}/>
+          <input required type="radio" name="entregar-retirar" id="retirar" onChange={() => setEntregar(false)}/>
           <label htmlFor="retirar">Retirar meu pedido</label>
         </div>
       </div>
@@ -57,23 +62,23 @@ function Forms() {
 
       {entregar ? 
       <div className="address">
-        <input type="text" name="endereco" id="endereco" placeholder='Endereço' />
-        <input type="text" name="numero" id="numero" placeholder='Nº' />
-        <input type="text" name="complemento" id="complemento" placeholder='Complemento' />
-        <input type="text" name="bairro" id="bairro" placeholder='Bairro' />
-        <input type="text" name='cidade' id='cidade' placeholder='Cidade'/>
-        <input type="text" name='cep' id='cep' placeholder='CEP' />
+        <input required type="text" name="endereco" id="endereco" placeholder='Endereço' />
+        <input required type="text" name="numero" id="numero" placeholder='Nº' />
+        <input required type="text" name="complemento" id="complemento" placeholder='Complemento' />
+        <input required type="text" name="bairro" id="bairro" placeholder='Bairro' />
+        <input required type="text" name='cidade' id='cidade' placeholder='Cidade'/>
+        <input required type="text" name='cep' id='cep' placeholder='CEP' />
         <p>Taxa de entrega a ser calculada</p>
       </div>
       : 
       <div className="location">
-        <input type="radio" name="unidade" id="unidade1" />
+        <input required type="radio" name="unidade" id="unidade1" />
         <label className='unidade-label' htmlFor="unidade1">
           <img src={pin} alt="" />
           <p className="unidade--nome">Loja 1: Rua Aparecida</p>
           <p className="unidade--endereco">R. Aparecida, 322.</p>
         </label>
-        <input type="radio" name="unidade" id="unidade2" />
+        <input required type="radio" name="unidade" id="unidade2" />
         <label className='unidade-label' htmlFor="unidade2">
           <img src={pin} alt="" />
           <p className="unidade--nome">Loja 2: Artur Bernardes</p>
@@ -87,6 +92,8 @@ function Forms() {
         <span>Enviar</span>
         <img src={arrow} alt="" />
       </button>
+
+      <input type="hidden" name="_next" value="https://reprehensible-potat.000webhostapp.com/?form=success"></input>
     </form>
   );
 }

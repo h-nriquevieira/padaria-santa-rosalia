@@ -1,8 +1,10 @@
 {
   "name": "padaria-sta-rosalia",
+  "homepage": "https://reprehensible-potat.000webhostapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.0",
     "@radix-ui/react-tabs": "^1.0.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",

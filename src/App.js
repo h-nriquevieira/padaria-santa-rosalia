@@ -7,7 +7,7 @@ import Menu from "./components/Menu/Menu"
 import Modal from "./components/Modal/Modal"
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
 
   return (

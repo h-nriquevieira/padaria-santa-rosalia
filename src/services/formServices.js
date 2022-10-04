@@ -14,9 +14,11 @@ export function handleData(data) {
   return formatedData
 }
 
-export async function submitForm(data, setModalOpen, setMessageSent) {
+export async function submitForm(data, setModalOpen, setMessageSent, setMessage) {
   try {
-    const response = await fetch("https://formsubmit.co/ajax/h.nriquevieira@gmail.com", {
+    setMessage(true)
+    setModalOpen(true)
+    const response = await fetch("https://formsubmit.co/ajax/eventos@santarosalia.com.br", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
@@ -24,10 +26,12 @@ export async function submitForm(data, setModalOpen, setMessageSent) {
       },
       body: JSON.stringify(data)
     })
+    setMessage(false)
     setMessageSent(true)
     setModalOpen(true)
   }
   catch {
+    setMessage(false)
     setMessageSent(false)
     setModalOpen(true)
   }

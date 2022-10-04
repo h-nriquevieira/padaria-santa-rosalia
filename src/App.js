@@ -9,14 +9,15 @@ import Modal from "./components/Modal/Modal"
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
+  const [message, setMessage] = useState(false)
 
   return (
     <div className="App">
-      {isModalOpen && <Modal success={messageSent} toggleModal={setIsModalOpen}/>}
+      {isModalOpen && <Modal success={messageSent} message={message} toggleModal={setIsModalOpen}/>}
       <Header />
       <About />
       <Menu />
-      <Encomende toggleModal={setIsModalOpen} setMessageSent={setMessageSent} />
+      <Encomende toggleModal={setIsModalOpen} setMessage={setMessage} setMessageSent={setMessageSent} />
       <Footer />
     </div>
   )

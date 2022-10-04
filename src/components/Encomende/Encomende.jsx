@@ -5,7 +5,7 @@ import Juridica from './Forms/Juridica'
 
 import './Encomende.css'
 
-function Encomende({toggleModal, setMessageSent}) {
+function Encomende({toggleModal, setMessageSent, setMessage}) {
   return (
     <div className="encomende" id="encomende">
       <h2 className="encomende--title">Encomende seu coffee break</h2>
@@ -20,7 +20,7 @@ function Encomende({toggleModal, setMessageSent}) {
           </Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content className='encomende--content' value='fisica'>
-          <Fisica toggleModal={toggleModal} setMessageSent={setMessageSent} />
+          <Fisica toggleModal={toggleModal} setMessage={setMessage} setMessageSent={setMessageSent} />
         </Tabs.Content>
         <Tabs.Content className='encomende--content' value='juridica'>
           <Juridica />

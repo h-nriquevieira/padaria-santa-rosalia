@@ -4,7 +4,7 @@ import arrow from '../../../assets/form--btn-arrow.svg'
 import pin from '../../../assets/location--pin.svg'
 import { handleData, submitForm } from '../../../services/formServices'
 
-function Forms({toggleModal, setMessageSent}) {
+function Forms({toggleModal, setMessageSent, setMessage}) {
   const [formData, setFormData] = useState({
     nome: '',
     email: '',
@@ -28,7 +28,7 @@ function Forms({toggleModal, setMessageSent}) {
   function handleSubmit(e) {
     e.preventDefault()
     const formatedData = handleData(formData)
-    submitForm(formatedData, toggleModal, setMessageSent)
+    submitForm(formatedData, toggleModal, setMessageSent, setMessage)
   }
 
   function handleChange(prop, value) {

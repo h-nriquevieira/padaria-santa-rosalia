@@ -99,7 +99,8 @@ function Forms({toggleModal, setMessageSent, setMessage}) {
         <p>Taxa de entrega a ser calculada</p>
       </div>
       : 
-      <div className="location">
+        <div className="location">
+          <p className='bold'>Por favor, escolha a unidade para retirar seu pedido:</p>
         <input onChange={e => handleChange('unidadeParaRetirar', 'Loja 1 - Rua Aparecida')}  required type="radio" name="unidade" id="unidade1" />
         <label className='unidade-label' htmlFor="unidade1">
           <img src={pin} alt="" />
